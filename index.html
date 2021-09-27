@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Group Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css"> 
+    <title>Contact Us</title>
 </head>
 <body>
-    
+    <form class="form" autocomplete="off">
+        <label for="name" class="label">FULL NAME</label>
+        <input type="text" name="name" id="name" placeholder="Enter first and last name" required>
+        <label for="email" class="label">EMAIL</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email" required>
+        <label for="select" class="label">SUBJECT</label>
+            <select name="subject" class="select" id="select">
+                <option value="general-enquiries" selected>General Enquiries</option>
+                <option value="support">Support</option>
+                <option value="career">Career</option>
+                <option value="other">Other</option>
+            </select>
+        <label for="message" class="label">MESSAGE</label>
+        <input type="message" name="message" id="message" placeholder="Enter Message" required>
+        <div class="checkbox">
+            <input type="checkbox" checked>
+            <label class="checkbox-label">I accept to receive news from VideoChamp</label>
+        </div>
+        <button type="submit">SEND MESSAGE</button>
+    </form>
 </body>
 </html>
