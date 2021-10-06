@@ -1,4 +1,10 @@
-/* below are for header section */
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #d8f89c;
+}
 
 .main-header {
     background-color: #bafae6;
@@ -153,9 +159,6 @@ ul.main-ul li:hover>a {
     }
 }
 
-
-/* below are for signin and signup buttons */
-
 .button-group {
     transition: 0.2s ease-in-out;
     list-style: none;
@@ -202,98 +205,98 @@ ul.main-ul li:hover>a {
     transform: scale(1);
 }
 
-
-/* header section finished here */
-
-
-/**below are  for main section**/
-
-.header-buttom-title {
-    /* margin-bottom: 100px; */
-    width: 29ch;
-    animation: typing 2s steps(26), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: 'Righteous', cursive;
-    font-size: 2em;
-    background-color: #d8f89c;
-    border-radius: 5px;
-    color: #511ab7;
-    margin: 10px;
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    height: 500px;
+    background-color: #bafae6;
+    border-radius: 4px;
 }
 
-@keyframes typing {
-    from {
-        width: 0
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    header-buttom-title {
-        font-size: 1em;
-    }
-}
-
-.get-started-btn {
-    width: 175px;
-    height: 53px;
-    background-color: #d8f89c;
-    color: #511ab7;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 700;
-    font-size: 16px;
+.headline {
     border-radius: 20px;
-    border: none;
-    margin-right: 30px;
-    margin-top: 45px;
-    border: 1px solid #511ab7;
+    margin-bottom: 20px;
+    border: 2px solid #511ab7;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
-.get-started-btn:hover {
-    background-color: rgb(240, 148, 179);
-    transition: all 0.9s ease-in-out;
-    transition-delay: 0.5s;
-    border-color: rgb(16, 8, 54);
-    box-shadow: 5px 5px rgb(29, 27, 27);
+h2 {
+    font-family: 'Source Code Pro', monospace;
+    color: #511ab7;
+}
+
+form {
+    display: flex;
+    /* padding: 50px; */
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Source Code Pro', monospace;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    background: #d8f89c;
+    border-radius: 20px;
+    border: 2px solid #511ab7;
+}
+
+.text-box {
+    height: 50px;
+    width: 75%;
+}
+
+.text-box:hover {
+    background-color: white;
     cursor: pointer;
 }
 
-.iframe {
-    margin: 20px;
-}
-
-.header-buttom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 10px;
-    background-color: #bafae6;
-}
-
-.page1-subcontainer {
-    width: 50%;
-    margin: 10px;
-    padding: 10px;
-}
-
-p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 20px;
+::placeholder {
     color: #511ab7;
-    font-weight: bold;
-    min-height: 50px;
+    font-family: 'Source Code Pro', monospace;
 }
 
+select {
+    font-family: 'Source Code Pro', monospace;
+    color: #511ab7;
+    border: none;
+    cursor: pointer;
+    background-color: #d8f89c;
+    border: 2px solid #511ab7;
+    border-radius: 20px;
+}
 
-/*below are for footer*/
+select:hover {
+    background-color: white;
+}
+
+button {
+    /* font-family: 'Source Code Pro', monospace; */
+    color: white;
+    border: none;
+    width: 175px;
+    height: 53px;
+    border-radius: 20px;
+    border: 2px solid #511ab7;
+    background-color: #511ab7;
+    box-shadow: 0px 5px 5px #888888;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6334b9;
+}
+
+button:activate {
+    box-shadow: none;
+}
 
 .main-footer {
     display: flex;

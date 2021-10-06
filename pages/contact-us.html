@@ -5,25 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videochamp</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://kit.fontawesome.com/748f5cc3b7.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/contact-us.css">
+    <title>Contact Us</title>
 </head>
 
 <body>
     <header class="main-header">
 
-        <img class="header-logo" src="images/rect14676.png" width="200" alt="logo icon">
+        <img class="header-logo" src="../images/rect14676.png" width="200" alt="logo icon">
         <nav class="nav main-nav">
             <ul class="main-ul">
                 <li class="list-item">
-                    <a href="index.html"> <i class="fas fa-home"></i><br>Home</a>
+                    <a href="../index.html"> <i class="fas fa-home"></i><br>Home</a>
                     <ul class="drop-menu">
                         <li class="drop-item"><a href="">Videochamp Basic</a> </li>
                         <li class="drop-item"><a href="">Videochamp Pro</a></li>
@@ -32,7 +28,7 @@
                 </li>
                 <li class="list-item"><a href="about.html"><i class="fas fa-id-card"></i><br>About us</a></li>
                 <li class="list-item"><a href="Gallery.html"><i class="fas fa-photo-video"></i><br>Gallery</a></li>
-                <li class="list-item"><a href="./pages/contact-us.html"><i class="fas fa-envelope"></i><br>Contact Us</a>
+                <li class="list-item"><a href="contact-us.html"><i class="fas fa-envelope"></i><br>Contact Us</a>
                     <ul class="drop-menu">
                         <li class="drop-item"><a href="">Mail Us</a></li>
                         <li class="drop-item"><a href="">Work for us</a></li>
@@ -47,41 +43,47 @@
             <li class="signup"><a href=""><button type="button" class="signup-btn">Sign Up</button></a></li>
         </ul>
     </header>
-
-    <section>
-        <div class="header-buttom">
-            <div class="page1-subcontainer">
-                <h1 class="header-buttom-title">Create customized videos for everyone.</h1>
-                <p>Our video editor comes with all of the features required to create great videos – no experience needed. Edit clips of all sizes directly in-browser without the hassle of inconvenient uploads. We even have a quick and simple Facebook Video
-                    Ad Maker that you can check out before heading over to the video editor.</p>
-                <a href=""><button type="button" class="get-started-btn">Get Started</button></a>
-
-            </div>
-
-
-
-            <iframe src="https://player.vimeo.com/video/340967276?h=e4426885e8&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <main class="card">
+        <div class="headline">
+            <h2>Contact Us</h2>
         </div>
-    </section>
+        <div class="form-box">
+            <form class="form" autocomplete="off">
+                <input class="text-box" type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input class="text-box" type="email" name="email" id="email" placeholder="Enter your email" required>
+                <select name="subject" class="select" id="select">
+                        <option value="choose-subject" selected>Choose Subject</option>
+                        <option value="general-enquiries">General Enquiries</option>
+                        <option value="support">Support</option>
+                        <option value="career">Career</option>
+                        <option value="other">Other</option>
+                    </select>
+                <textarea class="text-box" type="message" name="message" id="message" placeholder="Enter your message" required></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" checked>
+                    <label class="checkbox-label">I accept to receive news from VideoChamp</label>
+                </div>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </main>
     <footer class="main-footer">
         <h3 class="footer-logo">Videochamp</h3>
         <ul class=" footer-nav">
             <li>
                 <a href="http://facebook.com" target="_blank">
-                    <img src="images/fblogo.png" alt="facebook logo" width="100" height="100"></a>
+                    <img src="../images/fblogo.png" alt="facebook logo" width="100" height="100"></a>
             </li>
             <li>
                 <a href="http://spotify.com" target="_blank">
-                    <img src="images/spotifylogo.png" alt="spotify logo" width="100" height="100"></a>
+                    <img src="../images/spotifylogo.png" alt="spotify logo" width="100" height="100"></a>
             </li>
             <li>
                 <a href="http://youtube.com" target="_blank">
-                    <img src="images/youtubelogo.png" alt="youtube logo" width="100" height="100"></a>
+                    <img src="../images/youtubelogo.png" alt="youtube logo" width="100" height="100"></a>
             </li>
         </ul>
     </footer>
-
 </body>
-
 
 </html>
